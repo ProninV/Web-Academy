@@ -1,0 +1,138 @@
+.contact {
+  height: 650px;
+  background: url(./assets/contact.webp) no-repeat;
+  background-size: 100% 100%;
+  vertical-align: middle;
+  display: flex;
+  background-attachment: fixed;
+  background-color: rgba(33, 33, 33, 0.5);
+  background-blend-mode: darken;
+}
+.contact__header {
+  width: 980px;
+  margin: 90px auto 23px auto;
+  display: block;
+}
+.contact__title {
+  height: 140px;
+  color: #fff;
+  text-align: center;
+  font-size: 68px;
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+.contact__adress {
+  height: 50px;
+  display: block;
+  width: 980px;
+  font-size: 24px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.contact__tel {
+  display: block;
+  width: 980px;
+  font-size: 24px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.footer__sub {
+  width: 980px;
+  font-size: 18px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 1px;
+  padding-top: 80px;
+}
+.contact__footer {
+  margin-top: 30px;
+  margin-left: 290px;
+  display: block;
+}
+.product_form-input {
+  width: 400px;
+  height: 38px;
+  background-color: rgba(151, 151, 151, 0.5);
+  opacity: 0.7;
+  outline: none;
+  align-items: center;
+  display: block;
+}
+.product_form-input::placeholder {
+  color: #fff;
+}
+.product_form-input:focus {
+  background-color: rgb(62, 204, 181);
+  color: #fff;
+}
+.product_form-button {
+  display: block;
+  width: 400px;
+  height: 38px;
+  margin-top: 15px;
+  background-color: rgb(62, 204, 181);
+  color: #fff;
+  text-align: center;
+  outline: none;
+  border: 0;
+}
+.product_form-button:hover {
+  outline: none;
+  background-color: rgb(31, 124, 109);
+  border-color: rgb(31, 124, 109);
+}
+@media (max-width: 410px) {
+  .product_form-input {
+    margin-left: auto;
+    margin-right: auto;
+    width: 210px;
+  }
+  .product_form-button {
+    margin-left: auto;
+    margin-right: auto;
+    width: 210px;
+  }
+  .contact__footer {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contact__header {
+    width: 410px;
+  }
+  .contact__adress {
+    width: 410px;
+  }
+  .contact__tel {
+    width: 410px;
+  }
+  .footer__sub {
+    width: 410px;
+  }
+  .contact__title {
+    font-size: 34px;
+  }
+  .contact__adress {
+    font-size: 15px;
+    width: 310px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contact__tel {
+    font-size: 15px;
+    width: 310px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer__sub {
+    width: 310px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

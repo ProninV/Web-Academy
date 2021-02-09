@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Academy</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./body.css">
+    <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="./about.css">
+    <link rel="stylesheet" href="./community.css">
+    <link rel="stylesheet" href="./spaces.css">
+    <link rel="stylesheet" href="./community-slide.css">
+    <link rel="stylesheet" href="./membership.css">
+    <link rel="stylesheet" href="./contact.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./spaces-url.css">
+    <link rel="stylesheet" href="./grid.css">
+    <link rel="stylesheet" href="./slick-theme.css">
+    <link rel="stylesheet" href="./slick.css">
+    <link rel="stylesheet" href="./slidestyle.css">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header__container">
+                <H1 class="logo">
+                    <a class="logo__name" href="">The Annex</a>
+                    <span class="logo__point" href="">.</span>
+                </H1>
+                <nav class="navbar" id="navbar">
+                <a class="nav__link active" href="#home">Home</a>
+                <a class="nav__link" href="#about">About</a>
+                <a class="nav__link" href="#community">Community</a>
+                <a class="nav__link" href="#spaces">Spaces</a>
+                <a class="nav__link" href="#membership">Membership</a>
+                <a class="nav__link" href="#contact">Contact</a>
+            </nav>
+            <button class="navbar__toggle" id="btn">
+            </button>
+        </div>
+    </div>
+</header>
+ <main class="main">
+    <div class="home" id="home">
+        <div class="container__home">
+            <div class="container__sl">
+                <h3 class="container__sl_name">GO-WORKING</h3>
+            </div>
+            <div class="container__met">
+                <h4 class="container__met_name">IN AN INNOVATIVE ENVIRONMENT</h4>
+            </div>
+            <div class="container__oder">
+                <div class="container__oder_box">
+                    <a class="container__oder_bot" href="">BOOK A SPACE</a>
+                </div>
+            </div>  
+        </div>
+    </div>
+
+    <div class="about" id="about">
+        <div class="about__container">
+            <h2 class="about__container_title" >ABOUT US</h2>
+            <div class="about__container_text">
+                <p class="font_1">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+                <p class="font_2">This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. Make your company stand out and show your visitors who you are.</p>
+            </div>
+        </div>
+    </div>
+    <div class="community" id="community">
+        <h2 class="community__title">OUR COMMUNITY</h2>
+        <p class="community__text">I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.</p>
+    </div>
+    <div class="community__slide">
+        <section class="center slider slides">
+            <div>
+              <img class="slide-show__img" src="./assets/1.webp">
+            </div>
+            <div>
+              <img class="slide-show__img" src="./assets/2.webp">
+            </div>
+            <div>
+              <img class="slide-show__img" src="./assets/3.webp">
+            </div>
+            <div>
+              <img class="slide-show__img" src="./assets/4.webp">
+            </div>
+            <div>
+              <img class="slide-show__img" src="./assets/5.webp">
+            </div>
+            <div>
+              <img class="slide-show__img" src="./assets/6.webp">
+            </div>
+          </section>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="slick.js"></script>
+        <script>
+            $('.slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        centerMode:true,
+        });
+        </script>
+    </div>
+    <div class="spaces" id="spaces">
+        <h2 class="spaces__title">SPACES</h2>
+        <p class="spaces__text">I'm a paragraph. Click here to add your own text and edit me.</p>
+    </div>
+    <div class="spaces__url ">
+        <div class="work__col  ">
+            <div class="works__item ">
+                <a class="spaces__background " href="./openspaces.html"><img class="spaces__background_icon " src="./assets/spaces/1.webp" alt="">
+                <div class="work__info">
+                    <div class="work__title">Open Spaces</div>
+                </div>
+                <div class="arrow__container">
+                <a href=""><img class="arrow" src="./assets/arrow.png" alt=""></a>
+                </div>
+                </a>
+            </div>
+            <div class="works__item ">
+                <a class="spaces__background " href="./events.html"><img class="spaces__background_icon "  src="./assets/spaces/3.webp" alt="">
+                <div class="work__info">
+                    <div class="work__title">events</div>
+                </div></a>
+            </div>
+        </div>
+        <div class="work__col ">
+            <div class="works__item " >
+               <a class="spaces__background " href="./privateoffice.html"><img class="spaces__background_icon " src="./assets/spaces/2.webp" alt="">
+                <div class="work__info">
+                    <div class="work__title">private office</div>
+                </div></a>
+            </div>
+            <div class="works__item ">
+                <a class="spaces__background " href="./meetings.html"> <img class="spaces__background_icon " src="./assets/spaces/4.webp" alt="">
+                <div class="work__info">
+                    <div class="work__title">meetings room</div>
+                </div></a>
+            </div>
+        </div>
+    </div> 
+    <div class="membership" id="membership">
+        <div class="membership__header">
+            <h2 class="membership__header-title">MEMBERSHIP</h2>
+            <p class="membership__header-text">Become a member!</p>
+        </div>
+        <div class="services">
+            <div class="services__item">
+                <img class="services__icon" src="./assets/Membership/1,1.png" alt="">
+                <div class="services__text">One Awesome Desk</div>
+            </div>
+            <div class="services__item">
+                <img class="services__icon" src="./assets/Membership/2,2.png" alt="">
+                <div class="services__text">x5 Free One Hour Meeting Rooms</div>
+            </div>
+            <div class="services__item">
+                <img class="services__icon" src="./assets/Membership/3,3.png" alt="">
+                <div class="services__textl">Access to an Awesome Community of
+                    Innovative Individuals </div>
+            </div>
+        </div>
+        <div class="services">
+            <div class="services__item">
+                <img class="services__icon" src="./assets/Membership/4,4.png" alt="">
+                <div class="services__text">2GB Internet Speed</div>
+            </div>
+            <div class="services__item">
+                <img class="services__icon" src="./assets/Membership/5,5.png" alt="">
+                <div class="services__text">Unlimited Calls Abroad</div>
+        </div>
+            <div class="services__item">
+                <img class="services__icon" src="./assets/Membership/6,6.png" alt="">
+                <div class="services__textl">Happy Hour Every Friday from 18.00
+                    with Free Alcohol!</div>
+            </div>
+        </div>
+    </div>
+    <div class="contact" id="contact">
+        <div class="contact__header">
+            <h3 class="contact__title">CONTACT US</h3>
+            <p class="contact__adress">ADDRESS: 500 TERRY FRANCOIS STREET SAN FRANSISCO, CA 94158</p>
+            <p class="contact__tel">TEL: 123-456-7890  |  INFO@MYSITE.COM</p>
+            <p class="footer__sub">Subscribe For Updates and Promotions</p>
+            <form class="contact__footer">
+            <input 
+            required 
+            type="email" 
+            name="email" 
+            placeholder="Enter your email here*" 
+            class="product_form-input"
+            />
+            <button class="product_form-button">Get Updates</button>
+            </form>
+        </div>  
+ </div>
+<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8388763343933!2d-122.3893133844269!3d37.77037602018491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7fc4fe655553%3A0x931d9432b6890f26!2sThe%20Annex!5e0!3m2!1sru!2sua!4v1612531661361!5m2!1sru!2sua" width="100%" height="540" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</main>
+<footer class="footer">
+    <div class="footer__container">
+        <p class="conf">© 2023 by Annex. Proudly created with Wix.com</p>
+        <div class="icon__container">
+        <a href="https://twitter.com/wix"><img src="./assets/twitter.webp" alt="" class="footer__icon footer__iconfirst"></a>
+        <a href="https://www.facebook.com/wix"><img src="./assets/Facebook.webp" alt="" class="footer__icon"></a>
+        <a href="https://www.instagram.com/wix/"><img src="./assets/Instagram.webp" alt="" class="footer__icon"></a>
+        </div>
+    </div>
+</footer>
+<script>
+    const btn = document.querySelector('#btn');
+    const navbar = document.querySelector('#navbar');
+    btn.addEventListener('click', () => {
+      navbar.classList.toggle('navbar_active');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+.header {
+  width: 100%;
+  height: 74px;
+  background-color: #212121;
+  position: fixed;
+  z-index: 1000;
+  overflow: hidden;
+}
+.header__container {
+  max-width: 980px;
+  height: 50px;
+  display: flex;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  margin-left: calc((100% - 980px) * 0.5);
+  justify-content: space-between;
+}
+
+.logo {
+  padding: 5px 0px 24px calc((100% - 980px) * 0.5);
+  display: block;
+  width: 224px;
+  text-align: right;
+}
+.logo__name {
+  font-size: 28px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.logo__point {
+  color: #3eccb5;
+  text-decoration: none;
+  font-size: 33px;
+  border-radius: 50%;
+}
+
+.navbar {
+  width: 686px;
+  height: 50px;
+  text-align: right;
+  position: relative;
+  align-items: center;
+}
+.nav__link {
+  display: inline-block;
+  margin: 0 20px;
+  margin-top: 20px;
+  color: #ffffff;
+  --trans: 0.4s ease 0s;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.8s;
+  align-items: stretch;
+}
+.nav__link:hover {
+  color: aqua;
+}
+.navbar__toggle {
+  display: none;
+  position: relative;
+  background: transparent;
+  width: 25px;
+  height: 25px;
+}
+.navbar__toggle::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  transition: all 0.1s;
+  top: calc(33.3333% - 2px);
+}
+.navbar__toggle::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  transition: all 0.1s;
+  bottom: calc(33.3333% - 2px);
+}
+.navbar__menu {
+  display: flex;
+}
+
+@media (max-width: 991px) {
+  .navbar {
+    display: none;
+  }
+  .logo__name {
+    margin-left: 60px;
+    text-align: start;
+  }
+  .navbar__toggle {
+    display: block;
+  }
+  .navbar__menu {
+    background-color: #242424;
+    position: absolute;
+    width: 250px;
+    top: 60px;
+    left: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transform: translateX(-100%);
+    visibility: hidden;
+    transition: all 0.2s;
+  }
+  .navbar__item {
+    padding: 15px 0;
+    margin: 0;
+  }
+  .navbar_active .navbar__menu {
+    transform: translateX(0);
+    visibility: visible;
+  }
+  .navbar_active .navbar__toggle::after {
+    top: calc(50% - 1px);
+    transform: rotate(45deg);
+  }
+  .navbar_active .navbar__toggle::before {
+    bottom: calc(50% - 1px);
+    transform: rotate(-45deg);
+  }
+}
+/*# sourceMappingURL=header.css.map */

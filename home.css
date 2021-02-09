@@ -1,0 +1,111 @@
+.home {
+  height: 1048px;
+  background: url(./assets/Background\ Home.webp) no-repeat;
+  background-size: 100% 100%;
+  vertical-align: middle;
+  background-color: rgba(33, 33, 33, 0.5);
+  background-blend-mode: darken;
+  display: flex;
+}
+.container__home {
+  margin: auto;
+}
+.container__sl {
+  height: 119px;
+  margin: 0px 0px 27px calc((100% - 980px) * 0.5);
+  position: relative;
+  align-items: center;
+  display: block;
+}
+.container__sl_name {
+  font-size: 119px;
+  line-height: 1em;
+  text-align: center;
+  color: #ffffff;
+  font-weight: 700;
+}
+.container__met {
+  max-width: 981px;
+  height: 26px;
+  margin: 0px 0px 32px calc((100% - 980px) * 0.5);
+  position: relative;
+  align-items: center;
+}
+.container__met_name {
+  font-size: 19px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1em;
+  color: #ffffff;
+  letter-spacing: 8.55px;
+}
+.container__oder {
+  height: 44px;
+  max-width: 981px;
+  margin: 0px 0px 32px calc((100% - 980px) * 0.5);
+  text-align: center;
+  align-items: center;
+}
+.container__oder_box {
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  width: 191px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: rgb(62, 204, 181);
+}
+.container__oder_box:hover {
+  background-color: rgb(31, 124, 109);
+}
+.container__oder_bot {
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+  text-align: center;
+}
+@media (max-width: 991px) {
+  .home {
+    height: 400px;
+  }
+  .container__sl {
+    padding-top: 1px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    height: 90px;
+  }
+  .container__sl_name {
+    margin-top: 80px;
+    font-size: 30px;
+    height: 90px;
+    max-width: 289px;
+  }
+  .container__met {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+  .container__met_name {
+    max-width: 257px;
+    height: 37px;
+    font-size: 13px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .container__oder {
+    width: 160px;
+    height: 40px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+  .container__oder_box {
+    width: 160px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .container__oder_bot {
+    font-size: 14px;
+  }
+}

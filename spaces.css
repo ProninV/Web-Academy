@@ -1,0 +1,31 @@
+.spaces {
+  height: 242px;
+  background-color: rgb(62, 204, 181);
+  text-align: center;
+  display: block;
+}
+.spaces__title {
+  max-width: 871px;
+  height: 62px;
+  font-size: 46px;
+  letter-spacing: 0.15em;
+  align-items: center;
+  color: #ffffff;
+  padding-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.spaces__text {
+  max-width: 522px;
+  height: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  font-size: 15px;
+  line-height: 1.6em;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  padding-top: 80px;
+  font-family: Arial, Helvetica, sans-serif;
+}

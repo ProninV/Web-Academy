@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Playfair Display", serif;
+  scroll-behavior: smooth;
+}
+
+body,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/*Media*/
+@media (max-width: 991px) {
+  .nav {
+    display: none;
+  }
+  .mobile__menu {
+    display: block;
+    text-align: right;
+  }
+  .header {
+    width: 991px;
+  }
+  .logo {
+    text-align: left;
+  }
+  .home {
+    width: 991px;
+  }
+  .about {
+    width: 991px;
+  }
+  .community {
+    width: 991px;
+  }
+  .community__slide {
+    width: 991px;
+  }
+  .spaces {
+    width: 991px;
+  }
+  .spaces__url {
+    width: 991px;
+  }
+  .membership {
+    width: 991px;
+  }
+  .services {
+    width: 991px;
+  }
+  .contact {
+    width: 991px;
+  }
+  .map {
+    width: 991px;
+  }
+  .footer {
+    width: 991px;
+  }
+  .navbar__menu {
+    height: calc(100vh - 60px);
+    background-color: #242424;
+    position: absolute;
+    width: 250px;
+    top: 60px;
+    left: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transform: translateX(-100%);
+    visibility: hidden;
+    transition: all 0.2s;
+  }
+  .navbar__item {
+    padding: 15px 0;
+    margin: 0;
+  }
+  .navbar_active .navbar__menu {
+    transform: translateX(0);
+    visibility: visible;
+  }
+  .navbar_active .navbar__toggle::after {
+    top: calc(50% - 1px);
+    transform: rotate(45deg);
+  }
+  .navbar_active .navbar__toggle::before {
+    bottom: calc(50% - 1px);
+    transform: rotate(-45deg);
+  }
+}
+@media (max-width: 410px) {
+  .nav {
+    display: none;
+  }
+  .mobile__menu {
+    display: block;
+  }
+  .header {
+    width: 410px;
+  }
+  .home {
+    width: 410px;
+  }
+  .about {
+    width: 410px;
+  }
+  .community {
+    width: 410px;
+  }
+  .community__slide {
+    width: 410px;
+  }
+  .spaces {
+    width: 410px;
+  }
+  .spaces__url {
+    width: 410px;
+  }
+  .membership {
+    width: 410px;
+  }
+  .services {
+    width: 410px;
+  }
+  .contact {
+    width: 410px;
+  }
+  .map {
+    width: 410px;
+  }
+  .footer {
+    width: 410px;
+  }
+}

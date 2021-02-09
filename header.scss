@@ -1,0 +1,53 @@
+.header {
+  width: 100%;
+  height: 74px;
+  background-color: rgb(33, 33, 33);
+  position: fixed;
+  display: grid;
+  &__container {
+    width: 980px;
+    height: 50px;
+    display: flex;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    margin-left: calc((100% - 980px) * 0.5);
+    justify-content: space-between;
+  }
+}
+.logo {
+  padding: 5px 0px 24px calc((100% - 980px) * 0.5);
+  display: block;
+  width: 224px;
+  text-align: right;
+  &__name {
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  &__point {
+    color: rgb(62, 204, 181);
+    text-decoration: none;
+    font-size: 33px;
+  }
+}
+.nav {
+  width: 686px;
+  height: 50px;
+  text-align: right;
+  position: relative;
+  align-items: center;
+  &__link {
+    display: inline-block;
+    margin: 0 20px;
+    margin-top: 15px;
+    color: #ffffff;
+    --trans: 0.4s ease 0s;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.8s;
+  }
+  &__link:hover {
+    color: aqua;
+  }
+}

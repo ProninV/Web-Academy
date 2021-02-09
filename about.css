@@ -1,0 +1,74 @@
+.about {
+  height: 817px;
+  background: url(./assets/About.webp) no-repeat;
+  background-size: 100% 100%;
+  vertical-align: middle;
+  display: flex;
+  background-attachment: fixed;
+}
+.about__container {
+  display: block;
+  width: 614px;
+  height: 570px;
+  background-color: #ffffff;
+  margin: 123px auto 10px auto;
+}
+.about__container_title {
+  width: 381px;
+  height: 46px;
+  margin: 99px auto 10px auto;
+  text-align: center;
+  font-size: 46px;
+}
+.about__container_text {
+  width: 468px;
+  height: 256px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+.font_1 {
+  margin-top: 51px;
+  width: 468px;
+  height: 107px;
+  font-size: 15px;
+  text-align: center;
+  line-height: 22.5px;
+}
+.font_2 {
+  margin-top: 20px;
+  width: 468px;
+  height: 128px;
+  font-size: 15px;
+  text-align: center;
+  line-height: 22.5px;
+}
+@media (max-width: 991px) {
+  .about__container {
+    width: 280px;
+    height: 540px;
+  }
+  .about__container_text {
+    height: 468px;
+    width: 260px;
+  }
+  .font_1 {
+    width: 260px;
+    height: 198px;
+    font-size: 12px;
+    margin: 0;
+  }
+  .font_2 {
+    margin: 0;
+    width: 260px;
+    height: 242px;
+    font-size: 12px;
+  }
+  .about__container_title {
+    margin: 50px 0px 25px 0;
+    text-align: center;
+    width: 280px;
+    height: 32px;
+    font-size: 32px;
+  }
+}
